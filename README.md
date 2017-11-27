@@ -19,7 +19,7 @@ Until it is released, grab a jar [here](https://github.com/kongeor/p4n/releases/
 
 ## Limitations
 
-* Only tested on Windows. Probably not working on other OSs.
+* Only tested on Windows.
 * Does not work with Idea's VCS options.
 
 ## License

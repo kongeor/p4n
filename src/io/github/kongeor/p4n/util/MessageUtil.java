@@ -12,13 +12,10 @@ public class MessageUtil {
 	    NotificationDisplayType.BALLOON, true);
 
     private static void showMessage(String message, NotificationType type) {
-	ApplicationManager.getApplication().invokeLater(new Runnable() {
-	    @Override
-	    public void run() {
-		Notification notification = GROUP_DISPLAY_ID_INFO.createNotification(message, type);
-		Project[] projects = ProjectManager.getInstance().getOpenProjects();
-		Notifications.Bus.notify(notification, projects[0]);
-	    }
+	ApplicationManager.getApplication().invokeLater(() -> {
+	    Notification notification = GROUP_DISPLAY_ID_INFO.createNotification(message, type);
+	    Project[] projects = ProjectManager.getInstance().getOpenProjects();
+	    Notifications.Bus.notify(notification, projects[0]);
 	});
     }
 
