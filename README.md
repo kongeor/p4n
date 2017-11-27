@@ -15,6 +15,7 @@ Currently supported commands (all operate on the selected file):
 
 The plugin is [pending approval](https://plugins.jetbrains.com/plugin/edit?pluginId=10221#pluginDetails)
 
+Until it is released, grab a jar [here](https://github.com/kongeor/p4n/releases/tag/v1.0.1)
 
 ## Limitations
 
