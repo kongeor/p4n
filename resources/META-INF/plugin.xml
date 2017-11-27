@@ -10,7 +10,7 @@
     Limitations: <br>
 
     <ul>
-      <li>Only tested on Windows. Probably not working on other OSs.</li>
+      <li>Only tested on Windows.</li>
       <li>Does not work with Idea's VCS options.</li>
     </ul>
 
