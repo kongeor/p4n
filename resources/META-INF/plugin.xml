@@ -5,7 +5,7 @@
   <vendor email="kongeor@gmail.com" url="https://github.com/kongeor/p4n">Kostas Georgiadis</vendor>
 
   <description><![CDATA[
-    A thin wrapper for executing p4 commands<br>
+    A thin wrapper for executing p4 commands<br><br>
 
     Limitations: <br>
 
@@ -14,7 +14,7 @@
       <li>Does not work with Idea's VCS options.</li>
     </ul>
 
-    Currently supported commands (all operate on the currently selected file):
+    Currently supported commands (all operate on the selected file):
 
     <ul>
       <li>Add (Alt + P, A)</li>
@@ -29,7 +29,7 @@
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="173.0"/>
+  <idea-version since-build="172.0"/>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->

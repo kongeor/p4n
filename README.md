@@ -4,7 +4,7 @@ A thin wrapper for executing p4 commands
 
 ## Features
 
-Currently supported commands (all operate on the currently selected file):
+Currently supported commands (all operate on the selected file):
 
 * Add (Alt + P, A)
 * Checkout (Alt + P, C)
@@ -13,7 +13,7 @@ Currently supported commands (all operate on the currently selected file):
 
 ## Installing
 
-The plugin is [pending approaval](https://plugins.jetbrains.com/plugin/edit?pluginId=10221#pluginDetails)
+The plugin is [pending approval](https://plugins.jetbrains.com/plugin/edit?pluginId=10221#pluginDetails)
 
 
 ## Limitations
