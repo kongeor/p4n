@@ -1,0 +1,60 @@
+<idea-plugin>
+  <id>io.github.kongeor.p4n</id>
+  <name>P4 nano</name>
+  <version>1.0</version>
+  <vendor email="kongeor@gmail.com" url="https://github.com/kongeor/p4n">Kostas Georgiadis</vendor>
+
+  <description><![CDATA[
+    A thin wrapper for executing p4 commands<br>
+
+    Limitations: <br>
+
+    <ul>
+      <li>Only tested on Windows. Probably not working on other OSs.</li>
+      <li>Does not work with Idea's VCS options.</li>
+    </ul>
+
+    Currently supported commands (all operate on the currently selected file):
+
+    <ul>
+      <li>Add (Alt + P, A)</li>
+      <li>Checkout (Alt + P, C)</li>
+      <li>Delete (Alt + P, D)</li>
+      <li>Revert (Alt + P, R)</li>
+    </ul>
+    ]]></description>
+
+  <change-notes><![CDATA[
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="P4N.CheckoutFile" class="io.github.kongeor.p4n.CheckoutFile" text="CheckoutFile">
+      <keyboard-shortcut keymap="$default" first-keystroke="alt P" second-keystroke="E"/>
+    </action>
+    <action id="P4N.DeleteFile" class="io.github.kongeor.p4n.DeleteFile" text="DeleteFile">
+      <keyboard-shortcut keymap="$default" first-keystroke="alt P" second-keystroke="D"/>
+    </action>
+    <action id="P4N.RevertFile" class="io.github.kongeor.p4n.RevertFile" text="RevertFile">
+      <keyboard-shortcut keymap="$default" first-keystroke="alt P" second-keystroke="R"/>
+    </action>
+    <action id="P4N.AddFile" class="io.github.kongeor.p4n.AddFile" text="AddFile">
+      <keyboard-shortcut keymap="$default" first-keystroke="alt P" second-keystroke="A"/>
+    </action>
+  </actions>
+
+</idea-plugin>
