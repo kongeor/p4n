@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>io.github.kongeor.p4n</id>
   <name>P4 nano</name>
-  <version>1.0</version>
+  <version>1.0.2</version>
   <vendor email="kongeor@gmail.com" url="https://github.com/kongeor/p4n">Kostas Georgiadis</vendor>
 
   <description><![CDATA[
